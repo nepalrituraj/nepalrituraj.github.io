@@ -1,0 +1,239 @@
+.template-2 {
+  background: white;
+  max-width: 850px;
+  margin: 0 auto;
+  padding: 50px 60px;
+  font-family: 'Times New Roman', Times, serif;
+  color: #000;
+  line-height: 1.6;
+}
+
+/* Header */
+.t2-header {
+  text-align: center;
+  margin-bottom: 30px;
+  padding-bottom: 20px;
+  border-bottom: 2px solid #000;
+}
+
+.t2-photo-container {
+  text-align: center;
+  margin-bottom: 20px;
+}
+
+.t2-profile-photo {
+  width: 120px;
+  height: 120px;
+  border-radius: 50%;
+  object-fit: cover;
+  border: 3px solid #000;
+}
+
+.t2-name {
+  font-size: 36px;
+  font-weight: 700;
+  margin: 0 0 8px 0;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+}
+
+.t2-title {
+  font-size: 18px;
+  margin: 0 0 15px 0;
+  color: #333;
+}
+
+.t2-contact {
+  font-size: 14px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 6px;
+  margin-top: 15px;
+  line-height: 1.8;
+}
+
+.t2-contact span {
+  padding: 2px 0;
+  word-break: break-all;
+  max-width: 90%;
+}
+
+.t2-contact a {
+  color: #1a56db;
+  text-decoration: none;
+  border-bottom: 1px solid #1a56db;
+  word-break: break-all;
+}
+
+.t2-contact a:hover {
+  color: #000;
+  border-bottom-color: #000;
+}
+
+/* Sections */
+.t2-section {
+  margin-bottom: 25px;
+}
+
+.t2-section-heading {
+  font-size: 20px;
+  font-weight: 700;
+  text-transform: uppercase;
+  margin-bottom: 15px;
+  padding-bottom: 5px;
+  border-bottom: 1px solid #000;
+  letter-spacing: 0.5px;
+}
+
+.t2-text {
+  font-size: 15px;
+  margin: 0 0 10px 0;
+  white-space: pre-wrap;
+  text-align: justify;
+}
+
+/* Experience */
+.t2-exp-item {
+  margin-bottom: 20px;
+}
+
+.t2-exp-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: baseline;
+  margin-bottom: 5px;
+}
+
+.t2-exp-title {
+  font-size: 17px;
+  font-weight: 700;
+  margin: 0;
+}
+
+.t2-exp-period {
+  font-size: 14px;
+  font-style: italic;
+  color: #333;
+}
+
+.t2-exp-company {
+  font-size: 16px;
+  font-style: italic;
+  margin: 0 0 8px 0;
+  color: #333;
+}
+
+.t2-tech {
+  font-size: 14px;
+  margin: 8px 0 0 0;
+  color: #333;
+}
+
+/* Projects */
+.t2-projects {
+  margin-top: 12px;
+  padding-left: 15px;
+}
+
+.t2-project {
+  margin-bottom: 15px;
+}
+
+.t2-project-name {
+  font-size: 15px;
+  font-weight: 600;
+  margin: 0 0 3px 0;
+  color: #1a56db;
+}
+
+.t2-project-period {
+  font-size: 13px;
+  font-style: italic;
+  color: #d97706;
+  margin: 0 0 5px 0;
+}
+
+/* Expertise */
+.t2-expertise-item {
+  margin-bottom: 15px;
+}
+
+.t2-expertise-category {
+  font-size: 15px;
+  font-weight: 700;
+  margin: 0 0 5px 0;
+  color: #000;
+  text-transform: uppercase;
+  letter-spacing: 0.5px;
+}
+
+.t2-expertise-skills {
+  font-size: 16px;
+  margin: 0;
+  color: #555;
+  line-height: 1.6;
+}
+
+/* Languages */
+.t2-languages-container {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 20px;
+}
+
+.t2-language-item {
+  display: flex;
+  gap: 8px;
+  align-items: baseline;
+}
+
+.t2-language-name {
+  font-size: 15px;
+  font-weight: 700;
+  color: #000;
+}
+
+.t2-language-level {
+  font-size: 14px;
+  color: #555;
+  font-style: italic;
+  color: #ffa500;
+  letter-spacing: 2px;
+}
+
+/* Education */
+.t2-edu-item {
+  margin-bottom: 15px;
+}
+
+.t2-edu-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: baseline;
+  margin-bottom: 3px;
+}
+
+.t2-edu-degree {
+  font-size: 16px;
+  font-weight: 700;
+  margin: 0;
+}
+
+.t2-edu-period {
+  font-size: 12px;
+  font-style: italic;
+  color: #333;
+}
+
+.t2-edu-institution {
+  font-size: 13px;
+  margin: 0;
+  color: #333;
+}
+
+@media print {
+  .template-2 {
+    padding: 30px 40px;
+  }
+}

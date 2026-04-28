@@ -1,0 +1,299 @@
+.template-3 {
+  background: #f7fafc;
+  max-width: 1100px;
+  margin: 0 auto;
+  font-family: 'Inter', 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  color: #2d3748;
+}
+
+/* Header */
+.t3-header {
+  background: linear-gradient(120deg, #84fab0 0%, #8fd3f4 100%);
+  padding: 50px 60px;
+  clip-path: polygon(0 0, 100% 0, 100% 85%, 0 100%);
+}
+
+.t3-header-content {
+  display: flex;
+  align-items: center;
+  gap: 30px;
+}
+
+.t3-photo-container {
+  flex-shrink: 0;
+}
+
+.t3-profile-photo {
+  width: 120px;
+  height: 120px;
+  border-radius: 20px;
+  object-fit: cover;
+  border: 4px solid white;
+  box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+}
+
+.t3-header-text {
+  flex: 1;
+}
+
+.t3-name {
+  font-size: 40px;
+  font-weight: 800;
+  margin: 0 0 8px 0;
+  color: #1a202c;
+}
+
+.t3-title {
+  font-size: 20px;
+  margin: 0 0 15px 0;
+  color: #2d3748;
+  font-weight: 500;
+}
+
+.t3-contact {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 20px;
+  font-size: 15px;
+  color: #2d3748;
+}
+
+.t3-contact a {
+  color: #2563eb;
+  text-decoration: none;
+  border-bottom: 1px solid #2563eb;
+  transition: all 0.2s;
+  word-break: break-all;
+}
+
+.t3-contact a:hover {
+  color: #1e40af;
+  border-bottom-color: #1e40af;
+}
+
+/* Content */
+.t3-content {
+  padding: 40px 60px 60px;
+}
+
+.t3-section {
+  margin-bottom: 35px;
+}
+
+.t3-section-heading {
+  font-size: 26px;
+  font-weight: 700;
+  margin-bottom: 20px;
+  color: #1a202c;
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+
+.t3-heading-icon {
+  font-size: 30px;
+}
+
+.t3-text {
+  font-size: 16px;
+  line-height: 1.7;
+  color: #4a5568;
+  margin: 0 0 10px 0;
+  white-space: pre-wrap;
+  text-align: justify;
+}
+
+/* Experience */
+.t3-exp-item {
+  background: white;
+  padding: 25px;
+  margin-bottom: 20px;
+  border-radius: 12px;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.08);
+  border-left: 4px solid #8fd3f4;
+}
+
+.t3-exp-title {
+  font-size: 20px;
+  font-weight: 600;
+  color: #1a202c;
+  margin: 0 0 10px 0;
+}
+
+.t3-exp-meta {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 12px;
+  font-size: 16px;
+}
+
+.t3-exp-company {
+  color: #2d3748;
+  font-weight: 500;
+}
+
+.t3-exp-period {
+  color: #718096;
+  font-style: italic;
+}
+
+.t3-tech-tags {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 8px;
+  margin-top: 12px;
+}
+
+.t3-tech-tag {
+  background: linear-gradient(120deg, #84fab0 0%, #8fd3f4 100%);
+  color: #1a202c;
+  padding: 5px 12px;
+  border-radius: 15px;
+  font-size: 14px;
+  font-weight: 500;
+}
+
+/* Projects */
+.t3-projects {
+  margin-top: 15px;
+  padding-left: 10px;
+}
+
+.t3-project {
+  margin-bottom: 18px;
+}
+
+.t3-project-name {
+  font-size: 17px;
+  font-weight: 600;
+  color: #059669;
+  margin: 0 0 5px 0;
+}
+
+.t3-project-period {
+  font-size: 15px;
+  color: #dc2626;
+  font-style: italic;
+  margin: 0 0 8px 0;
+}
+
+/* Expertise */
+.t3-expertise-item {
+  background: white;
+  padding: 15px;
+  margin-bottom: 12px;
+  border-radius: 10px;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.08);
+}
+
+.t3-expertise-category {
+  font-size: 16px;
+  font-weight: 700;
+  color: #2563eb;
+  margin: 0 0 8px 0;
+  text-transform: uppercase;
+  letter-spacing: 0.5px;
+}
+
+.t3-expertise-skills {
+  font-size: 17px;
+  margin: 0;
+  color: #4a5568;
+  line-height: 1.6;
+}
+
+/* Languages */
+.t3-languages-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+  gap: 15px;
+}
+
+.t3-language-item {
+  background: white;
+  padding: 15px;
+  border-radius: 10px;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.08);
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.t3-language-name {
+  font-size: 16px;
+  font-weight: 600;
+  color: #1a202c;
+}
+
+.t3-language-level {
+  font-size: 15px;
+  color: #10b981;
+  font-weight: 500;
+  color: #f59e0b;
+  letter-spacing: 2px;
+}
+
+/* Two Column Layout */
+.t3-two-column {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 30px;
+}
+
+/* Education */
+.t3-edu-item {
+  background: white;
+  padding: 20px;
+  margin-bottom: 15px;
+  border-radius: 10px;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.08);
+}
+
+.t3-edu-degree {
+  font-size: 17px;
+  font-weight: 600;
+  color: #1a202c;
+  margin: 0 0 5px 0;
+}
+
+.t3-edu-institution {
+  font-size: 14px;
+  color: #4a5568;
+  margin: 0 0 5px 0;
+}
+
+.t3-edu-period {
+  font-size: 13px;
+  color: #718096;
+  margin: 0;
+}
+
+@media print {
+  .t3-header {
+    clip-path: none;
+    padding: 30px 40px;
+  }
+  
+  .t3-content {
+    padding: 20px 40px 40px;
+  }
+  
+  .t3-two-column {
+    grid-template-columns: 1fr;
+  }
+}
+
+@media (max-width: 768px) {
+  .t3-header-content {
+    flex-direction: column;
+    text-align: center;
+  }
+  
+  .t3-contact {
+    justify-content: center;
+  }
+  
+  .t3-two-column {
+    grid-template-columns: 1fr;
+  }
+}

@@ -1,0 +1,295 @@
+.template-1 {
+  background: white;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  color: #1a202c;
+  max-width: 1200px;
+  margin: 0 auto;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+.t1-layout {
+  display: grid;
+  grid-template-columns: 380px 1fr;
+  min-height: 100vh;
+}
+
+/* Sidebar Styles */
+.t1-sidebar {
+  background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+  color: white;
+  padding: 40px 30px;
+}
+
+.t1-photo-container {
+  text-align: center;
+  margin-bottom: 30px;
+}
+
+.t1-profile-photo {
+  width: 150px;
+  height: 150px;
+  border-radius: 50%;
+  object-fit: cover;
+  border: 4px solid white;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.2);
+}
+
+.t1-sidebar-header {
+  text-align: center;
+  margin-bottom: 30px;
+}
+
+.t1-name {
+  font-size: 30px;
+  font-weight: 700;
+  margin: 0 0 8px 0;
+  color: white;
+}
+
+.t1-title {
+  font-size: 16px;
+  margin: 0;
+  opacity: 0.95;
+  font-weight: 400;
+}
+
+.t1-section {
+  margin-bottom: 30px;
+}
+
+.t1-section-heading {
+  font-size: 20px;
+  font-weight: 600;
+  margin-bottom: 15px;
+  padding-bottom: 8px;
+  border-bottom: 2px solid rgba(255, 255, 255, 0.3);
+  color: white;
+}
+
+.t1-contact-list {
+  font-size: 15px;
+  line-height: 1.8;
+}
+
+.t1-contact-item {
+  margin-bottom: 10px;
+  word-break: break-all;
+  font-size: 14px;
+  line-height: 1.6;
+}
+
+.t1-contact-item a {
+  color: white;
+  text-decoration: underline;
+  word-break: break-all;
+}
+
+.t1-contact-item a:hover {
+  opacity: 0.8;
+}
+
+.t1-edu-item {
+  margin-bottom: 20px;
+}
+
+.t1-edu-degree {
+  font-size: 16px;
+  font-weight: 600;
+  margin: 0 0 5px 0;
+  color: white;
+}
+
+.t1-edu-institution {
+  font-size: 15px;
+  margin: 0 0 3px 0;
+  opacity: 0.9;
+}
+
+.t1-edu-period {
+  font-size: 14px;
+  margin: 0;
+  opacity: 0.8;
+}
+
+/* Expertise Styles */
+.t1-expertise-item {
+  margin-bottom: 18px;
+}
+
+.t1-expertise-category {
+  font-size: 15px;
+  font-weight: 700;
+  margin: 0 0 5px 0;
+  color: #fff;
+  text-transform: uppercase;
+  letter-spacing: 0.5px;
+}
+
+.t1-expertise-skills {
+  font-size: 15px;
+  margin: 0;
+  color: rgba(255, 255, 255, 0.85);
+  line-height: 1.6;
+}
+
+/* Languages Styles */
+.t1-language-item {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 12px;
+  padding-bottom: 8px;
+  border-bottom: 1px solid rgba(255, 255, 255, 0.2);
+}
+
+.t1-language-item:last-child {
+  border-bottom: none;
+}
+
+.t1-language-name {
+  font-size: 15px;
+  font-weight: 600;
+  color: white;
+}
+
+.t1-language-level {
+  font-size: 14px;
+  color: rgba(255, 255, 255, 0.85);
+  font-style: italic;
+  letter-spacing: 2px;
+}
+
+.t1-language-level .star-filled {
+  color: #ffd700;
+}
+
+.t1-language-level .star-empty {
+  color: rgba(255, 255, 255, 0.3);
+}
+
+/* Main Content Styles */
+.t1-main {
+  padding: 40px 50px;
+  background: white;
+}
+
+.t1-content-section {
+  margin-bottom: 35px;
+}
+
+.t1-content-heading {
+  font-size: 24px;
+  font-weight: 700;
+  color: #2d3748;
+  margin-bottom: 20px;
+  padding-bottom: 10px;
+  border-bottom: 3px solid #667eea;
+}
+
+.t1-summary-text {
+  font-size: 16px;
+  line-height: 1.7;
+  color: #4a5568;
+  white-space: pre-wrap;
+  text-align: justify;
+}
+
+.t1-exp-item {
+  margin-bottom: 30px;
+}
+
+.t1-exp-title {
+  font-size: 18px;
+  font-weight: 600;
+  color: #2d3748;
+  margin: 0 0 8px 0;
+}
+
+.t1-exp-meta {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 12px;
+  font-size: 14px;
+}
+
+.t1-exp-company {
+  color: #667eea;
+  font-weight: 500;
+}
+
+.t1-exp-period {
+  color: #718096;
+  font-style: italic;
+}
+
+.t1-exp-description {
+  font-size: 16px;
+  line-height: 1.6;
+  color: #4a5568;
+  margin-bottom: 10px;
+  white-space: pre-wrap;
+  text-align: justify;
+}
+
+.t1-exp-tech {
+  font-size: 15px;
+  color: #667eea;
+  margin: 8px 0 0 0;
+}
+
+/* Projects Styles */
+.t1-projects {
+  margin-top: 15px;
+  padding-left: 15px;
+  border-left: 3px solid #e2e8f0;
+}
+
+.t1-project-item {
+  margin-bottom: 20px;
+}
+
+.t1-project-item:last-child {
+  margin-bottom: 0;
+}
+
+.t1-project-name {
+  font-size: 17px;
+  font-weight: 600;
+  color: #667eea;
+  margin: 0 0 5px 0;
+}
+
+.t1-project-period {
+  font-size: 14px;
+  color: #f56565;
+  font-style: italic;
+  margin: 0 0 8px 0;
+}
+
+.t1-project-description {
+  font-size: 16px;
+  line-height: 1.6;
+  color: #4a5568;
+  margin: 0;
+  text-align: justify;
+}
+
+.t1-skills-text {
+  font-size: 14px;
+  line-height: 1.7;
+  color: #4a5568;
+  white-space: pre-wrap;
+}
+
+@media print {
+  .t1-layout {
+    grid-template-columns: 250px 1fr;
+  }
+  
+  .t1-sidebar {
+    padding: 20px 15px;
+  }
+  
+  .t1-main {
+    padding: 20px 30px;
+  }
+}
