@@ -151,6 +151,7 @@
   border-radius: 15px;
   font-size: 14px;
   font-weight: 500;
+  margin-bottom: 4px;
 }
 
 /* Projects */
@@ -189,10 +190,14 @@
 .t3-expertise-category {
   font-size: 16px;
   font-weight: 700;
-  color: #2563eb;
   margin: 0 0 8px 0;
   text-transform: uppercase;
   letter-spacing: 0.5px;
+  color: #1a202c;
+  padding: 5px 12px;
+  border-radius: 15px;
+  display: inline-block;
+  background: linear-gradient(120deg, #84fab0 0%, #8fd3f4 100%);
 }
 
 .t3-expertise-skills {
@@ -204,19 +209,77 @@
 
 /* Languages */
 .t3-languages-grid {
-  display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+  display: flex;
   gap: 15px;
+  flex-wrap: wrap;
+  justify-content: flex-start;
+}
+
+@media (max-width: 900px) {
+  .t3-languages-grid {
+    flex-direction: column;
+    gap: 10px;
+  }
 }
 
 .t3-language-item {
   background: white;
-  padding: 15px;
+  padding: 0;
   border-radius: 10px;
   box-shadow: 0 2px 8px rgba(0, 0, 0, 0.08);
   display: flex;
-  justify-content: space-between;
+  min-width: 180px;
+  max-width: 260px;
+  height: 48px;
+  align-items: stretch;
+  overflow: hidden;
+}
+
+/* Language backgrounds */
+.t3-language-item.lang-english {
+  color: #00247d;
+}
+.t3-language-item.lang-finnish {
+  color: #003580;
+}
+.t3-language-item.lang-nepali {
+  color: #e30b17;
+}
+
+.t3-language-label {
+  background: #fff;
+  display: flex;
   align-items: center;
+  justify-content: center;
+  padding: 0 18px;
+  font-weight: bold;
+  font-size: 16px;
+  min-width: 80px;
+  border-right: 2px solid #e5e7eb;
+}
+.t3-language-stars {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex: 1;
+  font-size: 22px;
+  font-weight: bold;
+  padding: 0 12px;
+}
+.t3-language-item.lang-english .t3-language-stars {
+  background: #00247d;
+  color: #fff;
+}
+.t3-language-item.lang-finnish .t3-language-stars {
+  background: #003580;
+  color: #fff;
+}
+.t3-language-item.lang-nepali .t3-language-stars {
+  background: #e30b17;
+  color: #fff;
+}
+.t3-language-item .t3-language-name {
+  font-weight: bold;
 }
 
 .t3-language-name {
@@ -283,17 +346,48 @@
   }
 }
 
+@media (max-width: 900px) {
+  .t3-header {
+    padding: 30px 5vw;
+  }
+  .t3-content {
+    padding: 20px 5vw 40px;
+  }
+  .t3-two-column {
+    grid-template-columns: 1fr;
+  }
+}
+
 @media (max-width: 768px) {
   .t3-header-content {
     flex-direction: column;
     text-align: center;
   }
-  
   .t3-contact {
     justify-content: center;
+    gap: 10px;
+    font-size: 13px;
   }
-  
-  .t3-two-column {
-    grid-template-columns: 1fr;
+  .t3-header {
+    padding: 18px 2vw;
+  }
+  .t3-content {
+    padding: 10px 2vw 20px;
+  }
+  .t3-profile-photo {
+    width: 70px;
+    height: 70px;
+  }
+  .t3-name {
+    font-size: 22px;
+  }
+  .t3-title {
+    font-size: 13px;
+  }
+  .t3-section-heading {
+    font-size: 15px;
+  }
+  .t3-text {
+    font-size: 12px;
   }
 }

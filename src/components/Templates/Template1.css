@@ -293,3 +293,48 @@
     padding: 20px 30px;
   }
 }
+
+@media (max-width: 900px) {
+  .t1-layout {
+    grid-template-columns: 1fr;
+    min-height: unset;
+  }
+  .t1-sidebar {
+    padding: 30px 15px;
+    border-radius: 0 0 20px 20px;
+    text-align: center;
+  }
+  .t1-main {
+    padding: 25px 10px;
+  }
+}
+
+@media (max-width: 600px) {
+  .template-1 {
+    max-width: 100vw;
+    box-shadow: none;
+    margin: 0;
+  }
+  .t1-sidebar {
+    padding: 18px 5px;
+  }
+  .t1-profile-photo {
+    width: 90px;
+    height: 90px;
+  }
+  .t1-name {
+    font-size: 22px;
+  }
+  .t1-title {
+    font-size: 13px;
+  }
+  .t1-main {
+    padding: 10px 2vw;
+  }
+  .t1-content-heading {
+    font-size: 18px;
+  }
+  .t1-summary-text, .t1-exp-description, .t1-project-description, .t1-skills-text {
+    font-size: 13px;
+  }
+}

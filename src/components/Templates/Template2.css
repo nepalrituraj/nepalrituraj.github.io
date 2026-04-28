@@ -237,3 +237,40 @@
     padding: 30px 40px;
   }
 }
+
+@media (max-width: 900px) {
+  .template-2 {
+    padding: 20px 5vw;
+    max-width: 100vw;
+  }
+  .t2-header {
+    padding-bottom: 10px;
+  }
+}
+
+@media (max-width: 600px) {
+  .template-2 {
+    padding: 8px 2vw;
+    max-width: 100vw;
+    box-shadow: none;
+  }
+  .t2-header {
+    font-size: 20px;
+    padding-bottom: 5px;
+  }
+  .t2-name {
+    font-size: 22px;
+  }
+  .t2-title {
+    font-size: 13px;
+  }
+  .t2-contact {
+    font-size: 12px;
+  }
+  .t2-section-heading {
+    font-size: 15px;
+  }
+  .t2-text {
+    font-size: 12px;
+  }
+}

@@ -21,7 +21,7 @@ function App() {
   // Check if running in development mode (local) or production (GitHub Pages)
   const isDevelopment = process.env.NODE_ENV === 'development';
   const [showForm, setShowForm] = useState(isDevelopment); // Show forms only in development
-  const [selectedTemplate, setSelectedTemplate] = useState('template1');
+  const [selectedTemplate, setSelectedTemplate] = useState('template3');
   const [cvData, setCvData] = useState(() => {
     // Load from localStorage or use default with pre-filled data
     const saved = localStorage.getItem('cvData');
@@ -380,7 +380,6 @@ function App() {
             </div>
           </aside>
         )}
-
         <main className={`preview-area ${!showForm ? 'full-width' : ''}`}>
           <div id="cv-preview" className="cv-preview">
             {renderTemplate()}

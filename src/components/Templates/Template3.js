@@ -119,7 +119,7 @@ function Template3({ data }) {
               </h2>
               {data.expertise.map((exp, index) => (
                 <div key={index} className="t3-expertise-item">
-                  <h3 className="t3-expertise-category">{exp.category}</h3>
+                  <h3 className={`t3-expertise-category ${exp.category.replace(/[^a-z0-9]/gi, '').toLowerCase()}`}>{exp.category}</h3>
                   <p className="t3-expertise-skills">{exp.skills}</p>
                 </div>
               ))}
@@ -134,18 +134,24 @@ function Template3({ data }) {
                 Languages
               </h2>
               <div className="t3-languages-grid">
-                {data.languages.map((lang, index) => (
-                  <div key={index} className="t3-language-item">
-                    <span className="t3-language-name">{lang.language}</span>
-                    <span className="t3-language-level">
-                      {Array.from({ length: 5 }, (_, i) => (
-                        <span key={i}>
-                          {i < lang.proficiency ? '★' : '☆'}
-                        </span>
-                      ))}
-                    </span>
-                  </div>
-                ))}
+                {data.languages.map((lang, index) => {
+                  let langClass = '';
+                  if (/english/i.test(lang.language)) langClass = 'lang-english';
+                  else if (/finnish/i.test(lang.language)) langClass = 'lang-finnish';
+                  else if (/nepali/i.test(lang.language)) langClass = 'lang-nepali';
+                  return (
+                    <div key={index} className={`t3-language-item ${langClass}`}>
+                      <span className="t3-language-label">{lang.language}</span>
+                      <span className="t3-language-stars">
+                        {Array.from({ length: 5 }, (_, i) => (
+                          <span key={i}>
+                            {i < lang.proficiency ? '★' : '☆'}
+                          </span>
+                        ))}
+                      </span>
+                    </div>
+                  );
+                })}
               </div>
             </section>
           )}
