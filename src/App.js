@@ -319,7 +319,7 @@ function App() {
   return (
     <div className="App">
       <header className="app-header">
-        <h1>{isDevelopment ? 'CV Builder' : 'Professional CV'}</h1>
+        <h1>{isDevelopment ? 'CV Builder' : `${cvData.personal?.name || 'Professional'} - Curriculum Vitae`}</h1>
         <div className="header-controls">
           {isDevelopment && (
             <>
