@@ -18,7 +18,9 @@ import Template2 from './components/Templates/Template2';
 import Template3 from './components/Templates/Template3';
 
 function App() {
-  const [showForm, setShowForm] = useState(true);
+  // Check if running in development mode (local) or production (GitHub Pages)
+  const isDevelopment = process.env.NODE_ENV === 'development';
+  const [showForm, setShowForm] = useState(isDevelopment); // Show forms only in development
   const [selectedTemplate, setSelectedTemplate] = useState('template1');
   const [cvData, setCvData] = useState(() => {
     // Load from localStorage or use default with pre-filled data
@@ -317,14 +319,18 @@ function App() {
   return (
     <div className="App">
       <header className="app-header">
-        <h1>CV Builder</h1>
+        <h1>{isDevelopment ? 'CV Builder' : 'Professional CV'}</h1>
         <div className="header-controls">
-          <button onClick={() => setShowForm(!showForm)} className="toggle-form-btn">
-            {showForm ? 'Hide' : 'Show'} Form
-          </button>
-          <button onClick={resetToDefault} className="toggle-form-btn" style={{background: '#f56565', color: 'white'}}>
-            Reset Data
-          </button>
+          {isDevelopment && (
+            <>
+              <button onClick={() => setShowForm(!showForm)} className="toggle-form-btn">
+                {showForm ? 'Hide' : 'Show'} Form
+              </button>
+              <button onClick={resetToDefault} className="toggle-form-btn" style={{background: '#f56565', color: 'white'}}>
+                Reset Data
+              </button>
+            </>
+          )}
           <select 
             value={selectedTemplate} 
             onChange={(e) => setSelectedTemplate(e.target.value)}
